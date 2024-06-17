@@ -76,6 +76,9 @@ input{
 form .input-field{
   margin-top: 30px;
 }
+  .title-spacing {
+      margin-bottom: 40px;
+    }
 `;
 
 export function loadStyles() {

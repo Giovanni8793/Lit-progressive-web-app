@@ -11,11 +11,16 @@
   <script type="module" src="./side-nav.js"></script>
   <script type="module" src="./recipe.js"></script>
   <script type="module" src="./about-content.js"></script>
+  <script type="module" src="./side-form.js"></script>
+  <script type="module" src="./contact.js"></script>
 </head>
 <body class="grey lighten-4">
-  <top-navigation></top-navigation>
-  <side-nav></side-nav>
-  <recipe-component></recipe-component>
-  <content-about></content-about>
+  <top-navigation>
+    <side-nav slot="sidenav"></side-nav>
+    <recipe-component slot="main"></recipe-component>
+    <content-about slot="about"></content-about>
+    <side-form slot="sideForm"></side-form>
+    <contact-component slot="contact"></contact-component>
+  </top-navigation>
 </body>
 </html>
