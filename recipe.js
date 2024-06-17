@@ -30,8 +30,8 @@ class Recipe extends LitElement {
   handleRecipeAdded = (event) => {
     
     console.log(typeof this.recipes);
-    this.recipes.push(event.detail); // Agregar la nueva receta al array
-    this.requestUpdate('recipes'); // Notificar a LitElement que la propiedad recipes ha sido actualizada
+    this.recipes.push(event.detail); 
+    this.requestUpdate('recipes');
     console.log('Receta agregada:', event.detail);
   }
 

@@ -24,7 +24,7 @@ class TopNavigation extends LitElement {
 
   constructor() {
     super();
-    this.currentContent = 'home'; // Inicialmente mostramos el contenido de 'home'
+    this.currentContent = 'home';
   }
 
   
@@ -33,7 +33,7 @@ class TopNavigation extends LitElement {
     console.log('evento', event.detail);
     const { section } = event.detail;
     this.currentContent = section;
-    this.closeMenu(); // Cerrar el menú lateral al cambiar de sección
+    this.closeMenu(); 
     this.requestUpdate();
   }
 

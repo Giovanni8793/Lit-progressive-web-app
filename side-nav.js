@@ -19,7 +19,6 @@ class SideNav extends LitElement {
   }
 
   _goToHome(event) {
-    console.log('Go to Home');
     this.dispatchEvent(new CustomEvent('navigate', {
       bubbles: true,
       composed: true,
@@ -29,7 +28,6 @@ class SideNav extends LitElement {
   }
 
   _goToAboutContent(event) {
-    console.log('Go to About');
     this.dispatchEvent(new CustomEvent('navigate', {
       bubbles: true,
       composed: true,
@@ -39,7 +37,6 @@ class SideNav extends LitElement {
   }
 
   _goToContact(event) {
-    console.log('Go to Contact');
     this.dispatchEvent(new CustomEvent('navigate', {
       bubbles: true,
       composed: true,
